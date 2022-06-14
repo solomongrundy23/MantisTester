@@ -40,9 +40,9 @@ namespace MantisTester.Tests
             Manager.ManagmentController.Open();
             Manager.ManagmentController.ToProjectManagement();
             Manager.ManagmentController.OpenProject(project);
-            //Manager.ManagmentController.PressRemoveFromProject();
-            //Manager.ManagmentController.GetProjectListFromDB(out projects);
-            //Assert.IsFalse(projects.Contains(project));
+            Manager.ManagmentController.PressRemoveFromProject();
+            Manager.ManagmentController.GetProjectListFromDB(out projects);
+            Assert.IsFalse(projects.Contains(project));
         }
     }
 }

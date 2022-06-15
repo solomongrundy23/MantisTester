@@ -39,7 +39,7 @@ namespace MantisTester.Models
                 Name = faker.Random.Words(3).Replace(" ", "_"),
                 Description = faker.Random.Words(30),
                 InheritGlobalSettings = true,
-                Status = Titles.ProjectConditionsTitles.Random().Id,
+                Status = Titles.ProjectStatusTitles.Random().Id,
                 ViewState = Titles.ProjectVisibilityTitles.Random().Id,
                 Enabled = true
             };

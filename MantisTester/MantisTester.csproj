@@ -160,6 +160,7 @@
     <Compile Include="Controllers\EmailController.cs" />
     <Compile Include="Controllers\FTPController.cs" />
     <Compile Include="Controllers\ManagmentController.cs" />
+    <Compile Include="Controllers\SoapController.cs" />
     <Compile Include="Controllers\TelnetController.cs" />
     <Compile Include="Helpers\Extensions.cs" />
     <Compile Include="Helpers\JsonHelper.cs" />
@@ -172,8 +173,9 @@
     <Compile Include="Models\ProjectModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\SoapTestSuite.cs" />
     <Compile Include="Tests\BaseTest.cs" />
-    <Compile Include="Tests\ProjectsTestSuit.cs" />
+    <Compile Include="Tests\UITestSuit.cs" />
     <Compile Include="Tests\WithAuth.cs" />
   </ItemGroup>
   <ItemGroup>

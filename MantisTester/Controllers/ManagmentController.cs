@@ -68,7 +68,7 @@ namespace MantisTester.Controllers
             return new ProjectModel()
             {
                 Name = columns[0].Text,
-                Status = Titles.ProjectConditionsTitles.IdByValue(columns[1].Text),
+                Status = Titles.ProjectStatusTitles.IdByValue(columns[1].Text),
                 Enabled = columns[2].Text == "X",
                 ViewState = Titles.ProjectVisibilityTableTitles.IdByValue(columns[3].Text),
                 Description = columns[4].Text
@@ -101,7 +101,7 @@ namespace MantisTester.Controllers
         {
             Driver.FindElement(By.CssSelector("#content > div:nth-child(2) > form > fieldset > input.button-small")).Click();
             FillTextBox(By.CssSelector("#project-name"), project.Name);
-            SelectElementInComboBox(By.CssSelector("#project-status"), Titles.ProjectConditionsTitles.ValueById(project.Status));
+            SelectElementInComboBox(By.CssSelector("#project-status"), Titles.ProjectStatusTitles.ValueById(project.Status));
             if (project.InheritGlobalSettings) Driver.FindElement(By.CssSelector("#project-inherit-global")).Click();
             SelectElementInComboBox(By.CssSelector("#project-view-state"), Titles.ProjectVisibilityTitles.ValueById(project.ViewState));
             FillTextBox(By.CssSelector("#project-description"), project.Description);

@@ -30,7 +30,7 @@ namespace MantisTester.Controllers
             client.Rename(path, backupPath);
         }
 
-        public void RestoreBackupFile(String path)
+        public void RestoreBackupFile(string path)
         {
             string backupPath = path + ".bak";
             if (!client.FileExists(backupPath))

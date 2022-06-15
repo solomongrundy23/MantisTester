@@ -1,12 +1,11 @@
 ﻿using MantisTester.Models;
 using NUnit.Framework;
-using System;
 using System.Linq;
 using MantisTester.Helpers;
 
 namespace MantisTester.Tests
 {
-    public class ProjectsTestSuit : WithAuth
+    public class UITestSuit : WithAuth
     {
         [Test]
         public void AddProject()

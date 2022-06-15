@@ -28,7 +28,7 @@ namespace MantisTester.Helpers
             public static readonly string configuration = "Управление конфигурацией";
         }
 
-        public static IdNameDictonary ProjectConditionsTitles = new IdNameDictonary()
+        public static IdNameDictonary ProjectStatusTitles = new IdNameDictonary()
         {
             { 10, "в разработке" },
             { 30, "выпущен" },

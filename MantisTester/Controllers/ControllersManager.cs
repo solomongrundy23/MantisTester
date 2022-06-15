@@ -40,6 +40,16 @@ namespace MantisTester.Controllers
             }
         }
 
+        private SoapController _soapController;
+        public SoapController SoapController
+        {
+            get
+            {
+                if (_soapController == null) _soapController = new SoapController(this);
+                return _soapController;
+            }
+        }
+
 
         public WebDriver Driver { get; private set; }
 

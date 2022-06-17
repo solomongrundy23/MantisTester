@@ -30,5 +30,13 @@ namespace MantisTester.Controllers
             portTypeClient.mc_project_add(auth.UserName, auth.Password, projectData);
             return Manager;
         }
+
+        public ControllersManager RemoveProject(ProjectModel project)
+        {
+            var auth = AuthModel.GetAdmin();
+            MantisSoap.MantisConnectPortTypeClient portTypeClient = new MantisSoap.MantisConnectPortTypeClient();
+            portTypeClient.mc_project_delete(auth.UserName, auth.Password, project.Id.ToString());
+            return Manager;
+        }
     }
 }

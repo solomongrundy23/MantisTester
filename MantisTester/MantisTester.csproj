@@ -149,6 +149,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\MantisSoapOutland\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\MantisSoap\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -180,6 +185,46 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Connected Services\MantisSoapOutland\mantisconnect.wsdl" />
+    <None Include="Connected Services\MantisSoapOutland\MantisTester.MantisSoapOutland.AccountData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MantisSoapOutland\MantisTester.MantisSoapOutland.CustomFieldDefinitionData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MantisSoapOutland\MantisTester.MantisSoapOutland.FilterData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MantisSoapOutland\MantisTester.MantisSoapOutland.HistoryData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MantisSoapOutland\MantisTester.MantisSoapOutland.IssueData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MantisSoapOutland\MantisTester.MantisSoapOutland.IssueHeaderData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MantisSoapOutland\MantisTester.MantisSoapOutland.ObjectRef.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MantisSoapOutland\MantisTester.MantisSoapOutland.ProfileDataSearchResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MantisSoapOutland\MantisTester.MantisSoapOutland.ProjectAttachmentData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MantisSoapOutland\MantisTester.MantisSoapOutland.ProjectData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MantisSoapOutland\MantisTester.MantisSoapOutland.ProjectVersionData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MantisSoapOutland\MantisTester.MantisSoapOutland.TagDataSearchResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MantisSoapOutland\MantisTester.MantisSoapOutland.UserData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\MantisSoap\mantisconnect.wsdl" />
     <None Include="Connected Services\MantisSoap\MantisTester.MantisSoap.AccountData.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -226,6 +271,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\MantisSoapOutland\" />
     <WCFMetadataStorage Include="Connected Services\MantisSoap\" />
   </ItemGroup>
   <ItemGroup>
@@ -236,6 +282,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\MantisSoap\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\MantisSoapOutland\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\MantisSoapOutland\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\MantisSoapOutland\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

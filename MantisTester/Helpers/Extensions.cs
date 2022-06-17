@@ -29,6 +29,8 @@ namespace MantisTester.Helpers
                 return firstChar.ToString();
         }
 
+        public static long ParseLong(this string s) => long.Parse(s);
+
         public static bool ExistsElement(this IWebDriver driver, string name) => driver.ExistsElement(By.Name(name));
 
         public static bool ExistsElement(this IWebDriver driver, By by)

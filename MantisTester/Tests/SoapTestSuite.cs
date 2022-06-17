@@ -11,7 +11,7 @@ namespace MantisTester.Tests
         {
             var project = ProjectModel.Generate();
             Manager.SoapController.AddNewProject(project)
-                   .ManagmentController.GetProjectListFromDB(out var projects);
+                   .SoapController.GetProjects(out var projects);
             Assert.IsTrue(projects.Contains(project));
         }
 
@@ -21,7 +21,7 @@ namespace MantisTester.Tests
             Manager.ManagmentController.GetProjectListFromDB(out var projects);
             var project = projects.Random();
             Manager.SoapController.RemoveProject(project)
-                   .ManagmentController.GetProjectListFromDB(out projects);
+                   .SoapController.GetProjects(out projects);
             Assert.IsFalse(projects.Contains(project));
         }
     }
